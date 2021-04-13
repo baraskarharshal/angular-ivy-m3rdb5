@@ -16,7 +16,7 @@ import { DashboardTileComponent } from "./dashboard-tile/dashboard-tile.componen
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor(injector: Injector) {
+  constructor(private injector: Injector) {
     const elm = createCustomElement(DashboardTileComponent, { injector });
 
     customElements.define("dashboard-tile1", elm);
