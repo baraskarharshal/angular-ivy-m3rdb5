@@ -7,11 +7,18 @@ import { ChartsModule } from "ng2-charts";
 import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { DashboardTileComponent } from "./dashboard-tile/dashboard-tile.component";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { AppRoutingModule } from "./app.routing.module";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, ChartsModule],
+  imports: [BrowserModule, FormsModule, ChartsModule, AppRoutingModule],
   exports: [DashboardTileComponent],
-  declarations: [AppComponent, HelloComponent, DashboardTileComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    DashboardTileComponent,
+    DashboardComponent
+  ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
