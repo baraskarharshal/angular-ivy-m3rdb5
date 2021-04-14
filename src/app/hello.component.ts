@@ -15,5 +15,5 @@ import { Component, Input } from "@angular/core";
   ]
 })
 export class HelloComponent {
-  @Input() name: string;
+  @Input() name: string = "Angular 11 Web Component";
 }
